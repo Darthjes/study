@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>DOM tests</title>
+</head>
+<body>
+	<h1>Test</h1>
+	<div style="margin: .5in; height: 400;">
+		<p><b><tt>text</tt></b></p>
+		<form>
+			<select onChange="setBodyAttr('text',this.options[this.selectIndex].value);">
+				<option value="black">black</option>
+				<option value="darkblue">darkblue</option>
+			</select>
+			<p><b><tt>bgColor</tt></b></p>
+			<select onChange="setBodyAttr('bgColor',this.options[this.selectIndex].value);">
+				<option value="white">white</option>
+				<option value="lightgrey">gray</option>
+			</select>
+			<p><b><tt>link</tt></b></p>
+			<select onChange="setBodyAttr('link',this.options[this.selectIndex].value);">
+				<option value="blue">blue</option>
+				<option value="green">green</option>
+			</select> <small>
+			<a href="#" id="sample">(sample link)</a></small><br>
+		</form>
+		<form>
+			<input type="button" value="version" onclick="ver()" />
+		</form>
+<!--     <div style="margin: .5in; height: 400;">
+	  <p><b><tt>text</tt></b></p>
+	  <form>
+		<select onChange="setBodyAttr('text',
+		this.options[this.selectedIndex].value);">
+		  <option value="black">black
+		  <option value="darkblue">darkblue
+		</select>
+		<p><b><tt>bgColor</tt></b></p>
+		<select onChange="setBodyAttr('bgColor',
+		this.options[this.selectedIndex].value);">
+		  <option value="white">white
+		  <option value="lightgrey">gray
+		</select>
+		<p><b><tt>link</tt></b></p>
+		<select onChange="setBodyAttr('link',
+		this.options[this.selectedIndex].value);">
+		  <option value="blue">blue
+		  <option value="green">green
+		</select>  <small>
+		<a href="http://www.brownhen.com/dom_api_top.html" id="sample">
+		(sample link)</a></small><br>
+	  </form>
+	  <form>
+		<input type="button" value="version" onclick="ver()" />
+	  </form>
+	</div> -->
+</body>
+</html>

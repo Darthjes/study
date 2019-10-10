@@ -1,0 +1,4 @@
+AddType application/x-httpd-php .4d
+AddDefaultCharset utf-8
+
+DirectoryIndex index.php
